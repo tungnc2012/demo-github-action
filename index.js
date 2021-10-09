@@ -5,8 +5,7 @@ const server = http.createServer((req, res) => {
         res.end('<h1>Simple Test Node App - Demo GitHub Action</h1>');
     }
 });
-// comment
-// test
+// test actions
 const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
