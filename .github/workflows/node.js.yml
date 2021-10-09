@@ -2,14 +2,14 @@ name: build
 on:
   push:
     paths: 
-      - '\*\*.js'
+      - '**.js'
 jobs:
   build:
     name: my job
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, windows-latest, ubuntu-18.04]
+        os: [macos-latest, windows-latest, ubuntu-latest]
         node: [10, 12.x, 14]
         exclude:
           - os: macos-latest
