@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        node: [10, 12.x, 14]
+        node: [10, 12, 14]
         exclude:
           - os: macos-latest
             node: 10
